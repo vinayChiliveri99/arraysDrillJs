@@ -7,11 +7,11 @@
 function flatten(elements) {
   let result = [];
 
-  for (let i = 0; i < elements.length; i++) {
-    if (Array.isArray(elements[i])) {
-      result = result.concat(flatten(elements[i]));
+  for (let index = 0; index < elements.length; index++) {
+    if (Array.isArray(elements[index])) {
+      result = result.concat(flatten(elements[index]));
     } else {
-      result.push(elements[i]);
+      result.push(elements[index]);
     }
   }
 
